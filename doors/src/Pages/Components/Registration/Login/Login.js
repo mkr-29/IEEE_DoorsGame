@@ -37,7 +37,6 @@ function Login(){
     <div className='center'>
       <div className='auth'>
         <h1>Log in</h1>
-        {/* H */}
         {error && <div className='auth__error'>{error}</div>}
         <form onSubmit={login} name='login_form'>
           <input 
