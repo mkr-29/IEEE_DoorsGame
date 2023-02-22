@@ -55,7 +55,7 @@
     position: absolute;
     right: 17%;
     top: 50px;
-    z-index: 0;
+    z-index: 1;
 }
 .v10{
     position: absolute;
@@ -186,4 +186,55 @@
     bottom: 0;
     right: 0.3rem;
     z-index: 0;
+}
+.d-signup{
+    background: linear-gradient(117.11deg, #863BC2 -56.55%, #742DCE 128.8%);
+    box-shadow: 0px 2.26696px 1.13348px rgba(0, 0, 0, 0.25);
+    border-radius: 55.0017px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal; 
+    font-weight: 500;
+    font-size: 17.0022px;
+    color: #F3D68F;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    z-index: 10;
+    right: 2rem;
+    top: 0.5rem;
+}
+.d-login{
+    right: 10rem;
+}
+
+
+@media screen and (min-width: 1920px){
+    .d-landing{
+        height: 83vh;
+    }
+    .v1{
+        width: 100%;
+    }
+    .v2, .v3, .v4{
+        width: 10rem;
+    }
+    .v2{
+        left: 9rem;
+    }
+    .v4{
+        right: 9rem;
+    }
+    .v10{
+        width: 8rem;
+        right: 37%;
+    }
+    .v11{
+        right: 3rem;
+    }
+    .d-signup{
+        top: 0.9rem;
+    }
+    .v14{
+        width: 100%;
+    }
 }

@@ -5,6 +5,7 @@ import {signInWithEmailAndPassword, sendEmailVerification} from 'firebase/auth'
 import {auth} from '../../Firebase/Firebase'
 import {useNavigate} from 'react-router-dom'
 import {useAuthValue} from '../../Firebase/AuthContext'
+import Landing from '../../../Landing/Landing'
 
 
 function Login(){
@@ -35,6 +36,7 @@ function Login(){
 
   return(
     <div className='center'>
+      <Landing/>
       <div className='auth'>
         <h1>Log in</h1>
         {error && <div className='auth__error'>{error}</div>}

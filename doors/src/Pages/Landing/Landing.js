@@ -19,10 +19,12 @@ import V15 from "./Assets/V15.svg"
 import V16 from "./Assets/V16.svg"
 import V17 from "./Assets/V17.svg"
 import V18 from "./Assets/V18.svg"
+import Login from '../FirebasePages/Registration/Login/Login'
 
 export default function Landing() {
   return (
     <div className='d-landing'>
+      <a href="/login" className='d-signup'>Login</a>
       <img src={V1} alt="" className='v1'/>
       <img src={V2} alt="" className='v2'/>
       <img src={V2} alt="" className='v3'/>

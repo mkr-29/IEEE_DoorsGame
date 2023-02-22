@@ -1,19 +1,17 @@
-import "./App.css";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Profile from "./Pages/FirebasePages/Registration/Profile/Profile";
-import Register from "./Pages/FirebasePages/Registration/Register";
-import VerifyEmail from "./Pages/FirebasePages/Registration/VerifyEmail/VerifyEmail";
-import Login from "./Pages/FirebasePages/Registration/Login/Login";
+import Profile from "./Registration/Profile/Profile";
+import Register from "./Registration/Register";
+import VerifyEmail from "./Registration/VerifyEmail/VerifyEmail";
+import Login from "./Registration/Login/Login";
 import { useState, useEffect } from "react";
-import { AuthProvider } from "./Pages/FirebasePages/Firebase/AuthContext";
-import { auth } from "./Pages/FirebasePages/Firebase/Firebase";
+import { AuthProvider } from "./Firebase/AuthContext";
+import { auth } from "./Firebase/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import PrivateRoute from "./Pages/FirebasePages/Registration/PrivateRoute/PrivateRoute";
+import PrivateRoute from "./Registration/PrivateRoute/PrivateRoute";
 import { Navigate } from "react-router-dom";
-import Landing from "./Pages/Landing/Landing";
-import Reg from "./Pages/FirebasePages/Reg";
 
-function App() {
+export default function Reg() {
   const [currentUser, setCurrentUser] = useState(null);
   const [timeActive, setTimeActive] = useState(false);
 
@@ -22,14 +20,9 @@ function App() {
       setCurrentUser(user);
     });
   }, []);
-
   return (
     <div>
       <Router>
-        <Routes>
-          <Route index element={<Landing />} />
-          <Route path="reg" element={<Reg />} />
-        </Routes>
         <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
           <Routes>
             <Route
@@ -66,9 +59,5 @@ function App() {
         </AuthProvider>
       </Router>
     </div>
-    // <Router>
-    // </Router>
   );
 }
-
-export default App;
