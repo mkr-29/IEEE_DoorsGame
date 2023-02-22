@@ -1,0 +1,47 @@
+.l-auth{
+    background: rgba(217, 217, 217, 0.43);
+    border-radius: 18px;
+}
+.l-lables{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0.1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+    margin-top: 1rem;
+    padding: 0;
+}
+.l-head{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    color: white;
+    margin: 0;
+}
+.l-submit{
+    margin-top: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    background: #46386C;
+    border-radius: 6px;
+    color: white;
+    border: none;
+}
+.l-registration{
+    display: flex;
+    margin-left: 0.1rem;
+    color: white;
+}
+.l-reglink{
+    color: #ffe5c0;
+}
+.l-inputs{
+    background: #D9D9D9;
+    border-radius: 6px;
+}

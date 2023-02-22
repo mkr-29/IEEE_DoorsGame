@@ -1,17 +1,59 @@
-.profile{
-  width: 90%;
-  max-width: 400px;
-  border: 1px solid #dcdcdc;
-  padding: 20px;
-  text-align: center;
+.p-user {
+  top: -0.1rem;
+  right: 12rem;
+  position: absolute;
+  z-index: 5;
+  color: wheat;
 }
-
-.profile p {
-  text-align: left;
-}
-
-.profile > span{
-  color: blue;
-  margin-top: 30px;
+.d-signup {
   cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.p-ieee {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  z-index: 5;
+  width: 8%;
+}
+.r-section {
+  display: flex;
+  position: absolute;
+  left: 9rem;
+  top: 12rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 0;
+  gap: 1rem;
+  z-index: 5;
+  width: 55%;
+  height: 27rem;
+  padding: 1rem;
+  background: rgba(217, 217, 217, 0.43);
+  border-radius: 18px;
+}
+.q-start {
+  font-size: 3rem;
+  text-decoration: none;
+  color: wheat;
+  background-color: #46386c;
+  padding: 0 1rem;
+  padding-bottom: 0.3rem;
+  border-radius: 1rem;
+}
+.r-head {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  color: wheat;
+}
+.r-rules {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f3d68f;
 }

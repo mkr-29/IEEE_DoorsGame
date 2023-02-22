@@ -11,7 +11,6 @@ import { onAuthStateChanged } from "firebase/auth";
 import PrivateRoute from "./Pages/FirebasePages/Registration/PrivateRoute/PrivateRoute";
 import { Navigate } from "react-router-dom";
 import Landing from "./Pages/Landing/Landing";
-import Reg from "./Pages/FirebasePages/Reg";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -26,15 +25,17 @@ function App() {
   return (
     <div>
       <Router>
-        <Routes>
-          <Route index element={<Landing />} />
-          <Route path="reg" element={<Reg />} />
-        </Routes>
         <AuthProvider value={{ currentUser, timeActive, setTimeActive }}>
           <Routes>
+            {/* <Route
+              index
+              element={
+                  <Landing />
+              }
+            /> */}
             <Route
-              exact
-              path="/"
+              // exact
+              path=""
               element={
                 <PrivateRoute>
                   <Profile />
@@ -42,7 +43,7 @@ function App() {
               }
             />
             <Route
-              path="/login"
+              path="login"
               element={
                 !currentUser?.emailVerified ? (
                   <Login />
@@ -66,8 +67,6 @@ function App() {
         </AuthProvider>
       </Router>
     </div>
-    // <Router>
-    // </Router>
   );
 }
 
